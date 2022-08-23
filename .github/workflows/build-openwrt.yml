@@ -18,9 +18,11 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-
+  schedule:
+    - cron: 0 16 * * *
+    
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/coolsnowwolf/openwrt-gl-ax1800
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
