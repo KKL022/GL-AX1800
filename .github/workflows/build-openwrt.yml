@@ -150,9 +150,9 @@ jobs:
       id: tag
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "::set-output name=release_tag::AX1800$(date +"%Y.%m.%d-%H%M")"
+        echo "::set-output name=release_tag::GL-AX1800 Flint$(date +"%Y.%m.%d-%H%M")"
         touch release.txt
-        echo "## 📦‍ 固件下载 | GLINET AX1800" >> release.txt
+        echo "## 📦‍ 固件下载 | GL-AX1800 Flint" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
         echo "::set-output name=status::success"
 
