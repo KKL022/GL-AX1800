@@ -17,10 +17,5 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-# git clone --depth=1 -b https://github.com/immortalwrt/luci/tree/openwrt-21.02/applications
+echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
 
-# Update feeds
-# ./scripts/feeds update -a
-
-# Install feeds
-# ./scripts/feeds install -a
