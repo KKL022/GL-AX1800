@@ -162,7 +162,6 @@ jobs:
       run: |
         echo "::set-output name=release_tag::Flint GL-AX1800-$(date +"%Y.%m.%d-%H%M")"
         touch release.txt
-#        echo "Flint GL-AX1800 firmware" >> release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
         echo "::set-output name=status::success"
